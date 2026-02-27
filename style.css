@@ -1,0 +1,113 @@
+body{
+margin:0;
+font-family:'Comic Sans MS', cursive;
+background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#a18cd1,#fbc2eb);
+background-size:400% 400%;
+animation:bg 12s infinite alternate;
+}
+
+@keyframes bg{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+nav{
+background:#ff4081;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+font-size:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.main-title{
+text-align:center;
+font-size:70px;
+color:white;
+text-shadow:0 0 20px yellow;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+.description{
+text-align:center;
+font-size:22px;
+color:white;
+padding:20px;
+}
+
+.card-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:260px;
+margin:20px;
+padding:15px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.btn{
+background:#ff4081;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:blue;
+}
+
+.cartoon-page{
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.cartoon-page img{
+width:300px;
+border-radius:20px;
+box-shadow:0 0 20px yellow;
+}
+
+.story{
+background:rgba(0,0,0,0.5);
+padding:20px;
+margin:20px;
+border-radius:15px;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
